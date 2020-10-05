@@ -101,24 +101,6 @@ public class AutomaticStorageManagerSwitchBarControllerTest {
     }
 
     @Test
-    public void onSwitchChanged_showWarningFragmentIfNotEnabledByDefault() {
-        mController.onSwitchChanged(null, true);
-
-        verify(mFragmentManager.beginTransaction())
-                .add(any(Fragment.class), eq(ActivationWarningFragment.TAG));
-    }
-
-    @Test
-    public void onSwitchChange_doNotShowWarningFragmentIfEnabledByDefault() {
-        SystemProperties.set("ro.storage_manager.enabled", "true");
-
-        mController.onSwitchChanged(null, true);
-
-        verify(mFragmentManager.beginTransaction(), never())
-                .add(any(Fragment.class), eq(ActivationWarningFragment.TAG));
-    }
-
-    @Test
     public void initializeSwitchOnConstruction() {
         Settings.Secure.putInt(
                 mContext.getContentResolver(),
