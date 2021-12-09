@@ -13662,5 +13662,10 @@
     <string name="bluetooth_connect_access_dialog_positive">Connect</string>
 
     <string name="sandboxed_google_play">Sandboxed Google Play</string>
+
+    <!-- Game Space -->
+    <string name="game_space_title">Game Space</string>
+    <string name="game_space_summary">Enhance your gaming experience</string>
+
     <string name="sandboxed_google_play_work_profile">Sandboxed Google Play (work profile)</string>
 </resources>
